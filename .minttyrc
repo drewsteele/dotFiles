@@ -1,5 +1,5 @@
 Transparency=off
-FontHeight=11
+FontHeight=10
 Columns=135
 Rows=42
 RightClickAction=paste
@@ -27,3 +27,4 @@ BoldWhite=253,246,227
 ForegroundColour=238,232,213
 BackgroundColour=0,43,54
 CursorColour=133,153,0
+Font=Consolas
