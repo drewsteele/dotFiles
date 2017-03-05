@@ -3,13 +3,16 @@ syntax on
 set backspace=indent,eol,start
 set modelines=0                                    " no custom modeline in files
 set ruler                                          " show where we are
-set number                                         " line numbers
 set splitbelow                                     " split always to bottom
 set splitright                                     " vsplit always to right
 
 set background=dark
 colorscheme solarized
 
+" Ctrl-P settings - igrnore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" these modify the cursor for different modes
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
