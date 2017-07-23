@@ -43,8 +43,9 @@ syn region kComment start="^\\\\*\s*$" end="\%$" contains=kTodo,kExit
 " multiline comment start / .. end \ 
 syn region kComment start="^/\s*$" end="^\\\s*$" keepend excludenl contains=kTodo
 " emphasised comment
-syn region kSpecialComment start="^\s*//" end="$" keepend excludenl contains=kTodo
-syn region kSpecialComment start="\s//" end="$" keepend excludenl contains=kTodo
+" I don't like the emphasised comments
+" syn region kSpecialComment start="^\s*//" end="$" keepend excludenl contains=kTodo
+" syn region kSpecialComment start="\s//" end="$" keepend excludenl contains=kTodo
 
 " Numbers, dates etc 
 syn match kNumber "-\=\(\d\+\)\=\.\d*\(e[+-]\=\d\+\)\=[ef]\="
