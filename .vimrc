@@ -1,4 +1,3 @@
-execute pathogen#infect()
 syntax on
 set nocompatible
 set backspace=indent,eol,start
