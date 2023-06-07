@@ -10,12 +10,12 @@ echo "Updating git submodules for vim plugins"
 git submodule init .vim/pack/*/start
 git submodule update .vim/pack/*/start
 
-DOTFILES=".vim .bashrc .tmux.conf .vimrc"
+DOTFILES=".vim .bashrc .tmux.conf .vimrc .bash_functions .bash_aliases"
 
 for FILE in $DOTFILES; do 
 	if [ -f $HOME/$FILE ]; then
 		echo "Backing up $FILE"
-		mv $HOME/$FILE $BKP_DIR/$FILE_bkp_$NOW
+		mv -v $HOME/$FILE ${BKP_DIR}/${FILE}_bkp_${NOW}
 	fi
 	echo "Copying $FILE to $HOME"
 	cp -R $FILE $HOME/.
